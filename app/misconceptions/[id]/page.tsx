@@ -3,19 +3,25 @@ import exhibitsData from '../../../content/exhibits.json'
 import CaseClient from './CaseClient'
 
 interface Exhibit {
-  id:            string
-  title:         string
-  myth:          string
-  category:      string
-  difficulty:    string
-  readTime:      string
-  room:          string
-  belief:        string
-  correction:    string
-  researchNote:  string
-  simulatorPreset: string
-  tags:          string[]
-  relatedIds:    string[]
+  id:                  string
+  title:               string
+  myth:                string
+  category:            string
+  difficulty:          string
+  readTime:            string
+  room:                string
+  belief:              string
+  correction:          string
+  researchNote:        string
+  simulatorPreset:     string
+  simulatorAvailable:  boolean
+  simulatorGuide:      string
+  demoType:            string
+  demoComponent?:      string
+  demoNote?:           string
+  tags:                string[]
+  relatedIds:          string[]
+  [key: string]:       unknown
 }
 
 const exhibits = exhibitsData as Exhibit[]
