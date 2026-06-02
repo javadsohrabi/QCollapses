@@ -4,6 +4,9 @@ import './globals.css'
 import Navbar from '../components/Navbar'
 
 export const metadata: Metadata = {
+  verification: {
+    google: 'I5wtXvDOFhjA6CbWP3ITBNrGVuA45uOC3yZaVRxa0Kw',
+  },
   icons: {
     icon: '/icon.svg',
     apple: '/icon.svg',
