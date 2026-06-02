@@ -774,7 +774,7 @@ export default function Home() {
                   opacity: 0.04, fontFamily: 'monospace', pointerEvents: 'none',
                 }}>{n}</div>
                 <span style={{ color: col.purple, fontFamily: 'monospace', fontSize: '12px', opacity: 0.7 }}>{n}</span>
-                <h3 style={{ color: col.text, fontWeight: 500, margin: '14px 0 10px', fontSize: '16px' }}>{title}</h3>
+                <h3 style={{ color: col.text, fontWeight: 500, margin: '14px 0 10px', fontSize: '16px' }}>{myth}</h3>
                 <p style={{ color: col.muted, fontSize: '13px', lineHeight: 1.75 }}>{body}</p>
               </motion.div>
             </FadeUp>
@@ -802,7 +802,7 @@ export default function Home() {
         </FadeUp>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '40px' }}>
-          {featured.map(({ tag, title, category, time, id }, i) => (
+          {featured.map(({ tag, myth, category, readTime, id }, i) => (
             <FadeUp key={i} delay={i * 0.08}>
               <Link href={'/misconceptions/' + id} style={{ textDecoration: 'none', display: 'block' }}>
                 <motion.div
@@ -823,12 +823,12 @@ export default function Home() {
                       color: col.purpleB,
                     }}>{tag}</span>
                     <span style={{ color: col.text, fontSize: '13px', fontWeight: 400, overflow: 'hidden', flex: 1, whiteSpace: 'normal', lineHeight: 1.4 }}>
-                      {title}
+                      {myth}
                     </span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
                     <span style={{ color: col.muted, fontSize: '12px', display: 'none' }} className="desktop-only">{category}</span>
-                    <span style={{ color: col.muted, fontSize: '11px', opacity: 0.6, whiteSpace: 'nowrap' }}>{time}</span>
+                    <span style={{ color: col.muted, fontSize: '11px', opacity: 0.6, whiteSpace: 'nowrap' }}>{readTime}</span>
                     <span style={{ color: col.purple, fontSize: '16px' }}>&#8594;</span>
                   </div>
                 </motion.div>
