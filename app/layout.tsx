@@ -4,6 +4,10 @@ import './globals.css'
 import Navbar from '../components/Navbar'
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/icon.svg',
+    apple: '/icon.svg',
+  },
   title: { default: 'QCollapses', template: '%s · QCollapses' },
   description: 'An interactive misconceptions of quantum misconceptions. Form the wrong idea first — then watch it collapse into something real.',
   keywords: ['quantum computing', 'quantum machine learning', 'quantum misconceptions', 'quantum education'],
