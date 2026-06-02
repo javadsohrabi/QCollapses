@@ -92,7 +92,7 @@ function StepBlock({ number, label, color, bg, children }: {
   )
 }
 
-function DemoSection({ exhibit }: { exhibit: Case }) {
+function DemoSection({ exhibit }: { exhibit: Exhibit }) {
   const comp = exhibit.demoComponent
 
   if (exhibit.demoType === 'none') {
@@ -118,7 +118,7 @@ function DemoSection({ exhibit }: { exhibit: Case }) {
   )
 }
 
-export default function CaseClient({ exhibit, related }: { exhibit: Case; related: Case[] }) {
+export default function CaseClient({ exhibit, related }: { exhibit: Exhibit; related: Exhibit[] }) {
   const [researchOpen, setResearchOpen] = useState(false)
 
   const showDemo      = exhibit.demoType === 'chart' || exhibit.demoType === 'both'
