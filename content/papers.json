@@ -413,7 +413,7 @@
       "fault tolerance",
       "Google Willow"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2024-12-09",
     "featuredNote": "Google demonstrates error correction below the surface code threshold for the first time \u2014 a genuine milestone toward fault-tolerant quantum computing."
   },
@@ -570,5 +570,27 @@
     "featured": false,
     "featuredDate": "",
     "featuredNote": ""
+  },
+  {
+    "id": "zomorodi-2026",
+    "title": "Optimal quantum circuit design via unitary neural networks",
+    "authors": "Zomorodi, M., Amini, H., Abbaszadeh, M., Sohrabi, J., Salari, V., Plawiak, P.",
+    "journal": "Quantum Information Processing",
+    "date": "2026-04-27",
+    "topic": "Circuits",
+    "level": "Advanced",
+    "idea": "Presents an automated method for synthesising quantum circuit representations of quantum algorithms by training a neural network on diverse input-output mappings. The trained model generates quantum circuits equivalent to the original algorithm with test accuracies from 98.27% to 99.99%.",
+    "takeaway": "Circuit compilation and synthesis is one of the hardest practical problems in quantum computing. Using neural networks to automate this process sidesteps the exponential search space of circuit design and opens a practical path toward automated quantum algorithm deployment.",
+    "link": "https://link.springer.com/article/10.1007/s11128-026-05170-9",
+    "tags": [
+      "circuit synthesis",
+      "neural networks",
+      "compilation",
+      "unitary",
+      "automation"
+    ],
+    "featured": true,
+    "featuredDate": "2026-04-27",
+    "featuredNote": "Automated quantum circuit synthesis using neural networks \u2014 achieving near-perfect accuracy on unseen inputs. A practical step toward removing one of the hardest bottlenecks in quantum algorithm deployment."
   }
 ]
