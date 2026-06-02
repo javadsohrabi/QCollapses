@@ -802,7 +802,7 @@ export default function Home() {
         </FadeUp>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '40px' }}>
-          {featured.map(({ tag, myth, category, readTime, id }, i) => (
+          {featured.map(({ tag, myth: title, category, readTime: time, id }, i) => (
             <FadeUp key={i} delay={i * 0.08}>
               <Link href={'/misconceptions/' + id} style={{ textDecoration: 'none', display: 'block' }}>
                 <motion.div
