@@ -62,6 +62,8 @@ const col = {
   bg:     '#09090F',
   surface:'#0F0F1A',
   border: '#1C1C2E',
+  amber:  '#EFC060',
+  teal:   '#1D9E75',
 }
 
 function QuantumCanvas({ mouseRef }: { mouseRef: React.MutableRefObject<{x: number, y: number}> }) {
