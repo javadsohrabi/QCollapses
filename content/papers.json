@@ -396,28 +396,6 @@
     "featuredNote": ""
   },
   {
-    "id": "google-willow-2024",
-    "title": "Quantum error correction below the surface code threshold",
-    "authors": "Acharya, R. et al. (Google Quantum AI)",
-    "journal": "Nature",
-    "date": "2024-12-09",
-    "topic": "Hardware",
-    "level": "Intermediate",
-    "idea": "Google Willow chip demonstrates that increasing the size of a surface code reduces the logical error rate \u2014 operating below the error correction threshold for the first time with a superconducting device. A critical milestone toward fault-tolerant quantum computing.",
-    "takeaway": "A genuine hardware milestone. Below-threshold error correction means that adding more qubits makes the computer more reliable, not less. This is the regime required for fault-tolerant quantum computing. The gap to practical fault tolerance remains large but this proves the principle.",
-    "link": "https://www.nature.com/articles/s41586-024-08449-y",
-    "tags": [
-      "error correction",
-      "surface code",
-      "threshold",
-      "fault tolerance",
-      "Google Willow"
-    ],
-    "featured": false,
-    "featuredDate": "2026-06-02",
-    "featuredNote": "Google demonstrates error correction below the surface code threshold for the first time on a superconducting device \u2014 a genuine milestone on the path to fault-tolerant quantum computing."
-  },
-  {
     "id": "perez-salinas-2020",
     "title": "Data re-uploading for a universal quantum classifier",
     "authors": "Perez-Salinas, A., Cervera-Lierta, A., Gil-Fuster, E., Latorre, J. I.",
