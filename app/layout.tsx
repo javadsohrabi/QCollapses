@@ -13,18 +13,18 @@ export const metadata: Metadata = {
     apple: '/icon.svg',
   },
   title: { default: 'QCollapses', template: '%s · QCollapses' },
-  description: 'An interactive museum of quantum computing misconceptions. Form the wrong idea first — then watch it collapse into something real.',
+  description: 'Quantum computing explained through its misconceptions. Form the wrong idea, then watch it collapse.',
   keywords: ['quantum computing', 'quantum machine learning', 'quantum misconceptions', 'quantum education'],
   openGraph: {
     title: 'QCollapses',
-    description: 'An interactive museum of quantum computing misconceptions.',
+    description: 'Quantum computing explained through its misconceptions. Form the wrong idea, then watch it collapse.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'QCollapses',
-    description: 'An interactive museum of quantum computing misconceptions.',
+    description: 'Quantum computing explained through its misconceptions. Form the wrong idea, then watch it collapse.',
   },
   robots: { index: true, follow: true },
 }
@@ -77,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span style={{ color: '#E2E0FF', fontSize: '14px', fontWeight: 500 }}>QCollapses</span>
             </div>
             <p style={{ color: '#6B698A', fontSize: '13px', marginBottom: '8px' }}>
-              An interactive museum of quantum computing misconceptions
+              Quantum computing explained through its misconceptions. Form the wrong idea, then watch it collapse.
             </p>
             <p style={{ color: '#6B698A', fontSize: '12px', opacity: 0.4 }}>
               Built in public by a quantum lover
