@@ -413,7 +413,7 @@
       "fault tolerance",
       "Google Willow"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-02",
     "featuredNote": "Google demonstrates error correction below the surface code threshold for the first time on a superconducting device \u2014 a genuine milestone on the path to fault-tolerant quantum computing."
   },
@@ -570,5 +570,27 @@
     "featured": false,
     "featuredDate": "",
     "featuredNote": ""
+  },
+  {
+    "id": "zhao-dft-2026",
+    "title": "Quantum algorithms for density functional theory with minimal readout",
+    "authors": "Zhao, Y., Nishi, H., Kosugi, T., Hirose, S., Sakagami, H., Oikawa, T., Okayama, T., Matsushita, Y.",
+    "journal": "arXiv",
+    "date": "2026-05-28",
+    "topic": "Algorithms",
+    "level": "Advanced",
+    "idea": "Presents a qubit-efficient encoding for Kohn-Sham density functional theory wavefunctions, with a quantum algorithm that computes all occupied orbitals simultaneously. By avoiding the costly readout of the electronic density \u2014 a key bottleneck \u2014 the method enables total energy evaluation with a potential exponential speedup for the Harris functional.",
+    "takeaway": "The input/output problem is what kills many claimed quantum speedups: reading data in and out of quantum states can erase any advantage. This work is interesting precisely because it sidesteps density readout entirely, attacking the real bottleneck rather than ignoring it.",
+    "link": "https://arxiv.org/abs/2605.29774",
+    "tags": [
+      "DFT",
+      "quantum chemistry",
+      "readout problem",
+      "Kohn-Sham",
+      "exponential speedup"
+    ],
+    "featured": true,
+    "featuredDate": "2026-06-03",
+    "featuredNote": "A quantum DFT algorithm that avoids the costly readout of electronic density \u2014 directly attacking the input/output bottleneck that erases many claimed quantum speedups. A potential exponential speedup for the Harris functional."
   }
 ]
