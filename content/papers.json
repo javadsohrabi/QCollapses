@@ -567,8 +567,30 @@
       "Kohn-Sham",
       "exponential speedup"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-03",
     "featuredNote": "A quantum DFT algorithm that avoids the costly readout of electronic density \u2014 directly attacking the input/output bottleneck that erases many claimed quantum speedups. A potential exponential speedup for the Harris functional."
+  },
+  {
+    "id": "cruz-benito-katas-2026",
+    "title": "Qiskit QuantumKatas: Adapting Microsoft's Quantum Computing exercises for LLM evaluation",
+    "authors": "Cruz-Benito, J., Faro, I.",
+    "journal": "arXiv",
+    "date": "2026-05-26",
+    "topic": "Algorithms",
+    "level": "Intermediate",
+    "idea": "Adapts Microsoft's QuantumKatas curriculum from Q# to Qiskit and packages it as a benchmark of 350 tasks across 26 categories with deterministic simulation-based verification. Evaluating 16 LLMs across 7 prompting setups (39,200 runs), the benchmark cleanly separates models with pass rates from 32% to 83%.",
+    "takeaway": "The most revealing finding: when LLMs fail at quantum coding, the problem is usually faulty quantum reasoning, not broken syntax. Models implement known algorithms well (Simon's: 82%) but struggle to encode classical problems into quantum terms (SAT for Grover's: 34%). Quantum intuition is the hard part \u2014 for humans and machines alike.",
+    "link": "https://arxiv.org/abs/2605.27210",
+    "tags": [
+      "LLM",
+      "benchmark",
+      "Qiskit",
+      "quantum reasoning",
+      "code generation"
+    ],
+    "featured": true,
+    "featuredDate": "2026-06-04",
+    "featuredNote": "A new benchmark for how well LLMs write quantum code. The striking result: models fail at quantum reasoning, not syntax \u2014 they can write valid Qiskit but get the quantum logic wrong, especially when encoding classical problems into quantum form."
   }
 ]
