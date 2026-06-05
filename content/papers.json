@@ -589,8 +589,30 @@
       "quantum reasoning",
       "code generation"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-04",
     "featuredNote": "A new benchmark for how well LLMs write quantum code. The striking result: models fail at quantum reasoning, not syntax \u2014 they can write valid Qiskit but get the quantum logic wrong, especially when encoding classical problems into quantum form."
+  },
+  {
+    "id": "abolins-ambainis-qaoa-2026",
+    "title": "A sharp interaction-degree threshold for simulating QAOA",
+    "authors": "\u0100boli\u0146\u0161, R., Ambainis, A.",
+    "journal": "arXiv",
+    "date": "2026-05-21",
+    "topic": "Algorithms",
+    "level": "Advanced",
+    "idea": "Identifies a sharp interaction-degree threshold for classically simulating QAOA with 2-local cost functions. At degree 2, exact classical sampling from depth-p QAOA runs in polynomial time when p = O(log n). At degree 3, classical sampling with even small multiplicative error would collapse the polynomial hierarchy to its third level \u2014 strong evidence of genuine hardness.",
+    "takeaway": "The crucial subtlety: the hard degree-3 instances have trivially optimizable cost functions, so sampling hardness does NOT imply a quantum optimization advantage. Conflating sampling hardness with optimization advantage is a common misconception \u2014 this paper draws the line precisely. Not all QAOA instances are equally quantum.",
+    "link": "https://arxiv.org/abs/2605.22758",
+    "tags": [
+      "QAOA",
+      "classical simulation",
+      "complexity",
+      "optimization",
+      "sampling hardness"
+    ],
+    "featured": true,
+    "featuredDate": "2026-06-05",
+    "featuredNote": "A sharp degree-2 vs degree-3 threshold for classically simulating QAOA, from Ambainis and \u0100boli\u0146\u0161. The key insight: even where classical sampling is hard, the cost functions are trivially optimizable \u2014 so sampling hardness alone does not prove a quantum optimization advantage."
   }
 ]
