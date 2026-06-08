@@ -847,7 +847,7 @@ export default function Home() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', padding: '7px 16px', borderRadius: '100px', backgroundColor: 'rgba(239,192,96,0.12)', border: '1px solid rgba(239,192,96,0.35)' }}>
                     <span style={{ fontSize: '14px', color: col.amber }}>★</span>
-                    <span style={{ color: col.amber, fontSize: '12px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Most interesting paper today</span>
+                    <span style={{ color: col.amber, fontSize: '12px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Featured paper</span>
                   </div>
                 </div>
                 <Link href="/papers" style={{ fontSize: '13px', color: col.purple, textDecoration: 'none', whiteSpace: 'nowrap' }}>
@@ -862,7 +862,7 @@ export default function Home() {
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right, rgba(239,192,96,0.9), transparent)' }} />
                 <div style={{ padding: '20px 22px' }}>
                   <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', alignItems: 'center', marginBottom: '10px' }}>
-                    <span style={{ fontSize: '10px', fontWeight: 600, padding: '2px 8px', borderRadius: '100px', backgroundColor: 'rgba(239,192,96,0.12)', color: col.amber, border: '1px solid rgba(239,192,96,0.25)' }}>★ Featured today</span>
+                    <span style={{ fontSize: '10px', fontWeight: 600, padding: '2px 8px', borderRadius: '100px', backgroundColor: 'rgba(239,192,96,0.12)', color: col.amber, border: '1px solid rgba(239,192,96,0.25)' }}>★ Featured</span>
                     <span style={{ fontSize: '10px', fontWeight: 500, padding: '2px 8px', borderRadius: '100px', backgroundColor: 'rgba(124,114,221,0.1)', color: col.purpleB, border: '1px solid rgba(124,114,221,0.2)' }}>{featuredPaper.topic}</span>
                     <span style={{ fontSize: '10px', fontWeight: 500, padding: '2px 8px', borderRadius: '100px', backgroundColor: 'rgba(29,158,117,0.1)', color: '#1D9E75' }}>{featuredPaper.level}</span>
                     <span style={{ fontSize: '11px', color: col.muted, marginLeft: 'auto', fontFamily: "'JetBrains Mono', monospace" }}>

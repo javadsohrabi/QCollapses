@@ -266,7 +266,7 @@ export default function NotFound() {
                   {[
                     { href: '/misconceptions',    label: 'Misconceptions'      },
                     { href: '/simulator', label: 'Simulator'   },
-                    { href: '/til',       label: 'Daily notes' },
+                    { href: '/papers',    label: 'Featured Papers' },
                     { href: '/about',     label: 'About'       },
                   ].map(l => (
                     <Link key={l.href} href={l.href}

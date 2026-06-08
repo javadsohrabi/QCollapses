@@ -7,7 +7,7 @@ import LogoMark from './LogoMark'
 
 const links = [
   { href: '/misconceptions', label: 'Misconceptions', sub: 'Browse misconceptions'        },
-  { href: '/papers',         label: 'Daily Papers',   sub: 'One great paper, every day'   },
+  { href: '/papers',         label: 'Featured Papers', sub: 'Quantum research, hand-picked' },
   { href: '/simulator',      label: 'Simulator',      sub: 'Build quantum circuits'       },
   { href: '/search',         label: 'Search',         sub: 'Find cases and papers'        },
   { href: '/about',          label: 'About',          sub: 'Who built this'               },

@@ -192,13 +192,13 @@ export default function Papers() {
       <div style={{ maxWidth: '960px', margin: '0 auto', padding: '60px 20px 32px' }}>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <p style={{ color: COL.purple, fontSize: '11px', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '10px' }}>
-            Daily papers
+            Featured papers
           </p>
           <h1 style={{ color: COL.text, fontSize: 'clamp(24px, 4vw, 38px)', fontWeight: 600, letterSpacing: '-0.02em', marginBottom: '10px' }}>
-            Daily Papers
+            Featured Papers
           </h1>
           <p style={{ color: COL.muted, fontSize: '15px', lineHeight: 1.7, maxWidth: '520px', marginBottom: '14px' }}>
-            One carefully selected quantum computing paper per day — with a plain-language summary, key takeaway, and direct link. Curated for researchers, students, and engineers who want to stay current without drowning in arXiv.
+            Hand-picked quantum computing papers — each with a plain-language summary, key takeaway, and direct link. Curated for researchers, students, and engineers who want signal without drowning in arXiv. New papers are added whenever something worth reading appears.
           </p>
           <div style={{ display: 'inline-flex', alignItems: 'flex-start', gap: '10px', padding: '10px 14px', borderRadius: '8px', backgroundColor: 'rgba(124,114,221,0.06)', border: '1px solid rgba(124,114,221,0.18)', maxWidth: '520px' }}>
             <span style={{ color: COL.purpleB, fontSize: '13px', flexShrink: 0 }}>◈</span>
