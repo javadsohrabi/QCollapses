@@ -611,8 +611,31 @@
       "optimization",
       "sampling hardness"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-05",
     "featuredNote": "A sharp degree-2 vs degree-3 threshold for classically simulating QAOA, from Ambainis and \u0100boli\u0146\u0161. The key insight: even where classical sampling is hard, the cost functions are trivially optimizable \u2014 so sampling hardness alone does not prove a quantum optimization advantage."
+  },
+  {
+    "id": "aizpurua-llm-qpu-2026",
+    "title": "Quantum-enhanced Large Language Models on Quantum Hardware via Cayley Unitary Adapters",
+    "authors": "Aizpurua, B., Singh, S., Kshetrimayum, A., Jahromi, S. S., Orus, R.",
+    "journal": "arXiv",
+    "date": "2026-05-07",
+    "topic": "Quantum ML",
+    "level": "Advanced",
+    "idea": "Inserts Cayley-parameterised unitary adapters \u2014 quantum circuit blocks \u2014 into the frozen projection layers of pre-trained LLMs, executed on a 156-qubit IBM Quantum System Two. The method improves the perplexity of Llama 3.1 8B by 1.4% with only 6,000 additional parameters, with end-to-end inference validated on real quantum hardware, not a simulator.",
+    "takeaway": "This is feasibility, not quantum advantage \u2014 and that distinction is the whole point. The 1.4% gain used only 6,000 parameters, but the key control (would 6,000 classical parameters do the same on the 8B model?) was only tested on a smaller 135M model. The headline is that real quantum hardware entered a production LLM's inference loop. The cold water is that it took over 4 hours for what a GPU does in under a second.",
+    "link": "https://arxiv.org/abs/2605.05914",
+    "tags": [
+      "LLM",
+      "quantum hardware",
+      "IBM",
+      "inference",
+      "unitary adapters",
+      "feasibility"
+    ],
+    "featured": true,
+    "featuredDate": "2026-06-08",
+    "featuredNote": "Real quantum hardware enters the inference loop of a production-scale LLM (Llama 3.1 8B on IBM's 156-qubit machine) \u2014 a genuine first. But read it as feasibility, not advantage: a 1.4% gain that took over 4 hours to run, where a GPU finishes in under a second."
   }
 ]
