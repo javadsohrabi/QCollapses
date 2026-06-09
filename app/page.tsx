@@ -847,7 +847,7 @@ export default function Home() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', padding: '7px 16px', borderRadius: '100px', backgroundColor: 'rgba(239,192,96,0.12)', border: '1px solid rgba(239,192,96,0.35)' }}>
                     <span style={{ fontSize: '14px', color: col.amber }}>★</span>
-                    <span style={{ color: col.amber, fontSize: '12px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Featured paper</span>
+                    <span style={{ color: col.amber, fontSize: '12px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Most interesting paper today</span>
                   </div>
                 </div>
                 <Link href="/papers" style={{ fontSize: '13px', color: col.purple, textDecoration: 'none', whiteSpace: 'nowrap' }}>
