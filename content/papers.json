@@ -634,8 +634,31 @@
       "unitary adapters",
       "feasibility"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-08",
     "featuredNote": "Real quantum hardware enters the inference loop of a production-scale LLM (Llama 3.1 8B on IBM's 156-qubit machine) \u2014 a genuine first. But read it as feasibility, not advantage: a 1.4% gain that took over 4 hours to run, where a GPU finishes in under a second."
+  },
+  {
+    "id": "babbush-crypto-2026",
+    "title": "Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations",
+    "authors": "Babbush, R., Zalcman, A., Gidney, C., Broughton, M., Khattar, T., Neven, H., Bergamaschi, T., Drake, J., Boneh, D.",
+    "journal": "arXiv",
+    "date": "2026-04-15",
+    "topic": "Algorithms",
+    "level": "Advanced",
+    "idea": "Provides new resource estimates for breaking the 256-bit Elliptic Curve Discrete Logarithm Problem \u2014 the core of modern blockchain cryptography. Shor's algorithm can run with under 1,450 logical qubits and under 70 million Toffoli gates; on superconducting hardware with 1e-3 error rates, the attack executes in minutes using fewer than half a million physical qubits. Introduces a fast-clock vs slow-clock architecture distinction that determines whether real-time on-spend attacks are feasible.",
+    "takeaway": "Sharpens the 'quantum breaks all crypto' picture into concrete, current numbers. The threat to elliptic-curve cryptocurrencies is real and specific \u2014 but it still requires fault-tolerant hardware that does not yet exist, and post-quantum migration is already underway. The fast-clock vs slow-clock framing is what decides whether live transactions are at risk.",
+    "link": "https://arxiv.org/abs/2603.28846",
+    "tags": [
+      "Shor",
+      "cryptography",
+      "blockchain",
+      "elliptic curve",
+      "post-quantum",
+      "resource estimation"
+    ],
+    "featured": true,
+    "featuredDate": "2026-06-15",
+    "featuredNote": "From Google Quantum AI, Stanford, and the Ethereum Foundation: concrete resource estimates for breaking elliptic-curve cryptocurrency cryptography \u2014 under 1,450 logical qubits, executable in minutes on future superconducting hardware. A sharp, current update to the 'quantum will break crypto' question, with an urgent call to migrate to post-quantum cryptography."
   }
 ]
