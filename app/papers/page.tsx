@@ -6,7 +6,7 @@ const COL = {
   purple:  '#7C72DD',
   purpleB: '#9D96E8',
   dim:     '#3D3875',
-  muted:   '#6B698A',
+  muted:   '#9492B0',
   text:    '#E2E0FF',
   bg:      '#09090F',
   surface: '#0F0F1A',

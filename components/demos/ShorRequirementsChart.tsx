@@ -14,7 +14,7 @@ export default function ShorRequirementsChart() {
   return (
     <div style={{ marginBottom: '8px' }}>
       <div style={{ backgroundColor: '#0F0F1A', borderRadius: '8px', padding: '16px', marginBottom: '8px' }}>
-        <p style={{ fontSize: '10px', color: '#6B698A', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+        <p style={{ fontSize: '10px', color: '#9492B0', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
           Physical qubits needed to break RSA (Gidney and Ekera, 2021)
         </p>
 
@@ -26,7 +26,7 @@ export default function ShorRequirementsChart() {
                   {d.label}
                 </span>
                 <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                  <span style={{ fontSize: '10px', color: '#6B698A', fontFamily: "'JetBrains Mono', monospace" }}>
+                  <span style={{ fontSize: '10px', color: '#9492B0', fontFamily: "'JetBrains Mono', monospace" }}>
                     {d.logical} logical
                   </span>
                   <span style={{ fontSize: '12px', fontWeight: 600, color: d.color, fontFamily: "'JetBrains Mono', monospace", minWidth: '36px', textAlign: 'right' }}>
@@ -69,7 +69,7 @@ export default function ShorRequirementsChart() {
         </div>
       </div>
 
-      <p style={{ fontSize: '11px', color: '#6B698A', lineHeight: 1.6, opacity: 0.8 }}>
+      <p style={{ fontSize: '11px', color: '#9492B0', lineHeight: 1.6, opacity: 0.8 }}>
         Breaking RSA-2048 requires ~20 million physical qubits running for 8 hours. Current best hardware has 127. The gap is not closing fast enough to be a near-term threat — but post-quantum cryptography standards are already being deployed.
       </p>
     </div>

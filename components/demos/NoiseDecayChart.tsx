@@ -33,13 +33,13 @@ export default function NoiseDecayChart() {
       ctx.moveTo(pad.l, y)
       ctx.lineTo(pad.l + cW, y)
       ctx.stroke()
-      ctx.fillStyle = '#6B698A'
+      ctx.fillStyle = '#9492B0'
       ctx.font = '10px monospace'
       ctx.textAlign = 'right'
       ctx.fillText((100 - i * 25) + '%', pad.l - 6, y + 4)
     }
 
-    ctx.fillStyle = '#6B698A'
+    ctx.fillStyle = '#9492B0'
     ctx.font = '10px monospace'
     ctx.textAlign = 'center'
     for (let i = 0; i <= 4; i++) {
@@ -67,7 +67,7 @@ export default function NoiseDecayChart() {
       ctx.fillText(labels[ri], labelX, Math.min(labelY + 4, H - pad.b))
     })
 
-    ctx.fillStyle = '#6B698A'
+    ctx.fillStyle = '#9492B0'
     ctx.font = '10px monospace'
     ctx.textAlign = 'center'
     ctx.fillText('Gates executed', pad.l + cW / 2, H - 4)
@@ -81,11 +81,11 @@ export default function NoiseDecayChart() {
 
   return (
     <div style={{ marginBottom: '8px' }}>
-      <p style={{ fontSize: '11px', color: '#6B698A', marginBottom: '8px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+      <p style={{ fontSize: '11px', color: '#9492B0', marginBottom: '8px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
         Fidelity decay by error rate per gate
       </p>
       <canvas ref={canvasRef} style={{ width: '100%', height: '200px', borderRadius: '8px', display: 'block' }} />
-      <p style={{ fontSize: '11px', color: '#6B698A', marginTop: '8px', lineHeight: 1.6, opacity: 0.7 }}>
+      <p style={{ fontSize: '11px', color: '#9492B0', marginTop: '8px', lineHeight: 1.6, opacity: 0.7 }}>
         At just 1% error per gate, a 100-gate circuit retains only 37% fidelity. At 5% it collapses to near zero.
       </p>
     </div>

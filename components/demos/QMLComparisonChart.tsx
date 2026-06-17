@@ -30,14 +30,14 @@ export default function QMLComparisonChart() {
       <div style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
         {(['structured', 'random'] as const).map(k => (
           <button key={k} onClick={() => setActive(k)}
-            style={{ padding: '5px 12px', borderRadius: '7px', fontSize: '11px', cursor: 'pointer', border: '1px solid ' + (active === k ? '#7C72DD' : '#1C1C2E'), backgroundColor: active === k ? 'rgba(124,114,221,0.12)' : 'transparent', color: active === k ? '#9D96E8' : '#6B698A', fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
+            style={{ padding: '5px 12px', borderRadius: '7px', fontSize: '11px', cursor: 'pointer', border: '1px solid ' + (active === k ? '#7C72DD' : '#1C1C2E'), backgroundColor: active === k ? 'rgba(124,114,221,0.12)' : 'transparent', color: active === k ? '#9D96E8' : '#9492B0', fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
             {k === 'structured' ? 'Quantum data' : 'Classical data'}
           </button>
         ))}
       </div>
 
       <div style={{ backgroundColor: '#0F0F1A', borderRadius: '8px', padding: '16px', marginBottom: '8px' }}>
-        <p style={{ fontSize: '10px', color: '#6B698A', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+        <p style={{ fontSize: '10px', color: '#9492B0', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
           {d.label} — accuracy vs training size
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -48,7 +48,7 @@ export default function QMLComparisonChart() {
             <div key={label}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
                 <span style={{ fontSize: '11px', color: color }}>{label}</span>
-                <span style={{ fontSize: '11px', color: '#6B698A' }}>{values[values.length - 1]}%</span>
+                <span style={{ fontSize: '11px', color: '#9492B0' }}>{values[values.length - 1]}%</span>
               </div>
               <div style={{ display: 'flex', gap: '3px', alignItems: 'flex-end', height: '40px' }}>
                 {values.map((v, i) => (
@@ -62,14 +62,14 @@ export default function QMLComparisonChart() {
               </div>
               <div style={{ display: 'flex', gap: '3px' }}>
                 {sizes.map(s => (
-                  <div key={s} style={{ flex: 1, fontSize: '9px', color: '#6B698A', textAlign: 'center', marginTop: '3px', fontFamily: 'monospace' }}>{s}</div>
+                  <div key={s} style={{ flex: 1, fontSize: '9px', color: '#9492B0', textAlign: 'center', marginTop: '3px', fontFamily: 'monospace' }}>{s}</div>
                 ))}
               </div>
             </div>
           ))}
         </div>
       </div>
-      <p style={{ fontSize: '11px', color: '#6B698A', lineHeight: 1.6, opacity: 0.8 }}>
+      <p style={{ fontSize: '11px', color: '#9492B0', lineHeight: 1.6, opacity: 0.8 }}>
         {d.note}
       </p>
     </div>

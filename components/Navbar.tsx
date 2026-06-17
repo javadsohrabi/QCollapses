@@ -14,7 +14,7 @@ const links = [
 ]
 
 const C = {
-  purple: '#7C72DD', muted: '#6B698A', text: '#E2E0FF',
+  purple: '#7C72DD', muted: '#9492B0', text: '#E2E0FF',
   bg: '#09090F', border: '#1C1C2E',
 }
 
@@ -83,7 +83,7 @@ export default function Navbar() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
               {links.filter(l => l.href !== '/search').map(l => (
                 <Link key={l.href} href={l.href} style={{
-                  color: isActive(l.href) ? '#E2E0FF' : '#6B698A',
+                  color: isActive(l.href) ? '#E2E0FF' : '#9492B0',
                   fontSize: '13px', textDecoration: 'none',
                   borderBottom: isActive(l.href) ? '1px solid #7C72DD' : '1px solid transparent',
                   paddingBottom: '2px',
@@ -95,14 +95,14 @@ export default function Navbar() {
               <a href="/search"
             style={{
               display: 'flex', alignItems: 'center', gap: '5px',
-              color: '#6B698A', fontSize: '13px', textDecoration: 'none',
+              color: '#9492B0', fontSize: '13px', textDecoration: 'none',
               padding: '6px 12px', borderRadius: '8px',
               border: '1px solid #1C1C2E',
               transition: 'color 0.15s',
             }}>
             <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
-              <circle cx="7" cy="7" r="5" stroke="#6B698A" strokeWidth="1.5"/>
-              <line x1="11" y1="11" x2="15" y2="15" stroke="#6B698A" strokeWidth="1.5" strokeLinecap="round"/>
+              <circle cx="7" cy="7" r="5" stroke="#9492B0" strokeWidth="1.5"/>
+              <line x1="11" y1="11" x2="15" y2="15" stroke="#9492B0" strokeWidth="1.5" strokeLinecap="round"/>
             </svg>
             Search
           </a>
@@ -203,7 +203,7 @@ export default function Navbar() {
                         }}>
                           {l.label}
                         </div>
-                        <div style={{ color: '#6B698A', fontSize: '13px' }}>{l.sub}</div>
+                        <div style={{ color: '#9492B0', fontSize: '13px' }}>{l.sub}</div>
                       </div>
                       <span style={{ color: '#7C72DD', fontSize: '22px' }}>→</span>
                     </div>
@@ -226,7 +226,7 @@ export default function Navbar() {
                 }}>
                 ⚛ Buy me a qubit
               </a>
-              <p style={{ color: '#6B698A', fontSize: '11px', textAlign: 'center', marginTop: '10px', opacity: 0.5 }}>
+              <p style={{ color: '#9492B0', fontSize: '11px', textAlign: 'center', marginTop: '10px', opacity: 0.5 }}>
                 Via Ko-fi · No account needed
               </p>
             </motion.div>

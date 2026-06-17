@@ -56,7 +56,7 @@ const featured = [
 const col = {
   purple: '#7C72DD',
   purpleB: '#9D96E8',
-  muted:  '#6B698A',
+  muted:  '#9492B0',
   text:   '#E2E0FF',
   dim:    '#3D3875',
   bg:     '#09090F',
@@ -735,7 +735,7 @@ export default function Home() {
       {/* myths strip */}
       <div style={{ borderTop: `1px solid ${col.border}`, borderBottom: `1px solid ${col.border}`, padding: '16px 0', overflow: 'hidden', position: 'relative' }}>
         <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(to right, ${col.bg} 0%, transparent 8%, transparent 92%, ${col.bg} 100%)`, zIndex: 2, pointerEvents: 'none' }} />
-        <div style={{ display: 'flex', gap: '48px', padding: '0 24px', opacity: 0.4 }}>
+        <div style={{ display: 'flex', gap: '48px', padding: '0 24px', opacity: 0.5 }}>
           {[...myths, ...myths].map((m, i) => (
             <span key={i} style={{ color: col.muted, fontSize: '12px', whiteSpace: 'nowrap', flexShrink: 0 }}>
               <span style={{ color: col.purple, marginRight: '8px' }}>✗</span>{m}

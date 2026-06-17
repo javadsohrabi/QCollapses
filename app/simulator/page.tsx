@@ -6,7 +6,7 @@ const COL = {
   purple:  '#7C72DD',
   purpleB: '#9D96E8',
   dim:     '#3D3875',
-  muted:   '#6B698A',
+  muted:   '#9492B0',
   text:    '#E2E0FF',
   bg:      '#09090F',
   surface: '#0F0F1A',
@@ -654,7 +654,7 @@ export default function Simulator() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <p style={{ color: '#7C72DD', fontSize: '11px', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '10px' }}>Quantum lab</p>
           <h1 style={{ color: '#E2E0FF', fontSize: 'clamp(24px, 4vw, 36px)', fontWeight: 600, letterSpacing: '-0.02em', marginBottom: '10px' }}>Circuit simulator</h1>
-          <p style={{ color: '#6B698A', fontSize: '15px', lineHeight: 1.7, maxWidth: '520px', marginBottom: '14px' }}>
+          <p style={{ color: '#9492B0', fontSize: '15px', lineHeight: 1.7, maxWidth: '520px', marginBottom: '14px' }}>
             Build a quantum circuit, add noise, measure mid-circuit, optimize gates, and inspect results. 4 qubits, 10 steps, 13 gate types.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxWidth: '560px' }}>
@@ -679,18 +679,18 @@ export default function Simulator() {
         <MetricsPanel circ={circ} n={nQ} />
 
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.08 }}>
-          <p style={{ color: '#6B698A', fontSize: '11px', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '10px' }}>Preset circuits</p>
+          <p style={{ color: '#9492B0', fontSize: '11px', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '10px' }}>Preset circuits</p>
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '16px' }}>
             {Object.entries(PRESETS).map(([key, p]) => (
               <button key={key} onClick={() => loadPreset(key)}
-                style={{ padding: '7px 14px', borderRadius: '8px', fontSize: '12px', fontWeight: 500, border: '1px solid ' + (activePreset === key ? '#7C72DD' : '#1C1C2E'), backgroundColor: activePreset === key ? 'rgba(124,114,221,0.12)' : 'transparent', color: activePreset === key ? '#9D96E8' : '#6B698A', cursor: 'pointer', transition: 'all 0.15s', fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
+                style={{ padding: '7px 14px', borderRadius: '8px', fontSize: '12px', fontWeight: 500, border: '1px solid ' + (activePreset === key ? '#7C72DD' : '#1C1C2E'), backgroundColor: activePreset === key ? 'rgba(124,114,221,0.12)' : 'transparent', color: activePreset === key ? '#9D96E8' : '#9492B0', cursor: 'pointer', transition: 'all 0.15s', fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
                 {p.label}
               </button>
             ))}
           </div>
           {activePreset && (
             <motion.div initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }}
-              style={{ padding: '11px 15px', borderRadius: '8px', marginBottom: '20px', backgroundColor: 'rgba(124,114,221,0.06)', border: '1px solid rgba(124,114,221,0.18)', fontSize: '13px', color: '#6B698A', lineHeight: 1.6 }}>
+              style={{ padding: '11px 15px', borderRadius: '8px', marginBottom: '20px', backgroundColor: 'rgba(124,114,221,0.06)', border: '1px solid rgba(124,114,221,0.18)', fontSize: '13px', color: '#9492B0', lineHeight: 1.6 }}>
               <span style={{ color: '#9D96E8', fontWeight: 500 }}>{PRESETS[activePreset].label}: </span>
               {PRESETS[activePreset].desc}
             </motion.div>
@@ -699,9 +699,9 @@ export default function Simulator() {
 
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.12 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px', flexWrap: 'wrap' }}>
-            <p style={{ color: '#6B698A', fontSize: '11px', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Gates</p>
+            <p style={{ color: '#9492B0', fontSize: '11px', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Gates</p>
             <span style={{ color: '#1C1C2E' }}>·</span>
-            <span style={{ color: '#6B698A', fontSize: '11px', opacity: 0.7 }}>{GATE_INFO[selGate].desc}</span>
+            <span style={{ color: '#9492B0', fontSize: '11px', opacity: 0.7 }}>{GATE_INFO[selGate].desc}</span>
           </div>
           <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '16px' }}>
             {(Object.keys(GATE_INFO) as GateName[]).map(g => {
@@ -709,7 +709,7 @@ export default function Simulator() {
               const active = selGate === g
               return (
                 <button key={g} onClick={() => { setSelGate(g); setPending(null) }}
-                  style={{ padding: '6px 14px', borderRadius: '8px', fontSize: '12px', fontWeight: 600, border: '1px solid ' + (active ? info.border : '#1C1C2E'), backgroundColor: active ? info.bg : 'transparent', color: active ? info.fg : '#6B698A', cursor: 'pointer', transition: 'all 0.15s', fontFamily: "'JetBrains Mono', monospace" }}>
+                  style={{ padding: '6px 14px', borderRadius: '8px', fontSize: '12px', fontWeight: 600, border: '1px solid ' + (active ? info.border : '#1C1C2E'), backgroundColor: active ? info.bg : 'transparent', color: active ? info.fg : '#9492B0', cursor: 'pointer', transition: 'all 0.15s', fontFamily: "'JetBrains Mono', monospace" }}>
                   {g}
                 </button>
               )

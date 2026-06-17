@@ -76,10 +76,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </svg>
               <span style={{ color: '#E2E0FF', fontSize: '14px', fontWeight: 500 }}>QCollapses</span>
             </div>
-            <p style={{ color: '#6B698A', fontSize: '13px', marginBottom: '8px' }}>
+            <p style={{ color: '#9492B0', fontSize: '13px', marginBottom: '8px' }}>
               Quantum computing explained through its misconceptions. Form the wrong idea, then watch it collapse.
             </p>
-            <p style={{ color: '#6B698A', fontSize: '12px', opacity: 0.4 }}>
+            <p style={{ color: '#9492B0', fontSize: '12px', opacity: 0.4 }}>
               Built in public by a quantum lover
             </p>
             <div style={{
@@ -95,7 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 { label: 'About',       href: '/about'     },
               ].map(l => (
                 <a key={l.href} href={l.href}
-                  style={{ color: '#6B698A', fontSize: '12px', textDecoration: 'none' }}>
+                  style={{ color: '#9492B0', fontSize: '12px', textDecoration: 'none' }}>
                   {l.label}
                 </a>
               ))}

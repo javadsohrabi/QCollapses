@@ -181,7 +181,7 @@ export default function NotFound() {
               <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '12px', color: '#7C72DD', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '16px' }}>
                 Searching for page...
               </div>
-              <div style={{ fontSize: '18px', color: '#6B698A', lineHeight: 1.7 }}>
+              <div style={{ fontSize: '18px', color: '#9492B0', lineHeight: 1.7 }}>
                 Page exists in superposition.<br />
                 <span style={{ color: '#9D96E8' }}>Collapsing wavefunction...</span>
               </div>
@@ -197,7 +197,7 @@ export default function NotFound() {
               <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '12px', color: '#EFC060', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '16px' }}>
                 Measurement in progress...
               </div>
-              <div style={{ fontSize: '18px', color: '#6B698A', lineHeight: 1.7 }}>
+              <div style={{ fontSize: '18px', color: '#9492B0', lineHeight: 1.7 }}>
                 <span style={{ color: '#EFC060' }}>Wavefunction collapsing</span><br />
                 into a definite state...
               </div>
@@ -226,7 +226,7 @@ export default function NotFound() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                style={{ fontSize: 'clamp(15px, 2.5vw, 18px)', color: '#6B698A', lineHeight: 1.7, marginBottom: '8px' }}>
+                style={{ fontSize: 'clamp(15px, 2.5vw, 18px)', color: '#9492B0', lineHeight: 1.7, marginBottom: '8px' }}>
                 This page collapsed into an undefined state.
               </motion.p>
 
@@ -234,7 +234,7 @@ export default function NotFound() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                style={{ fontSize: '13px', color: '#6B698A', lineHeight: 1.7, marginBottom: '36px', opacity: 0.6 }}>
+                style={{ fontSize: '13px', color: '#9492B0', lineHeight: 1.7, marginBottom: '36px', opacity: 0.6 }}>
                 Much like a qubit before measurement — it existed somewhere,
                 but the act of observing it collapsed every possibility into nothing.
               </motion.p>
@@ -249,7 +249,7 @@ export default function NotFound() {
                   Back to home
                 </Link>
                 <Link href='/misconceptions'
-                  style={{ padding: '12px 24px', borderRadius: '10px', fontSize: '14px', border: '1px solid #1C1C2E', color: '#6B698A', textDecoration: 'none' }}>
+                  style={{ padding: '12px 24px', borderRadius: '10px', fontSize: '14px', border: '1px solid #1C1C2E', color: '#9492B0', textDecoration: 'none' }}>
                   Enter the misconceptions section
                 </Link>
               </motion.div>
@@ -259,7 +259,7 @@ export default function NotFound() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.55, duration: 0.5 }}
                 style={{ padding: '16px 20px', borderRadius: '10px', border: '1px solid #1C1C2E', backgroundColor: '#0F0F1A' }}>
-                <p style={{ color: '#6B698A', fontSize: '11px', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '10px' }}>
+                <p style={{ color: '#9492B0', fontSize: '11px', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '10px' }}>
                   Quick navigation
                 </p>
                 <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
@@ -270,7 +270,7 @@ export default function NotFound() {
                     { href: '/about',     label: 'About'       },
                   ].map(l => (
                     <Link key={l.href} href={l.href}
-                      style={{ padding: '6px 12px', borderRadius: '7px', fontSize: '12px', border: '1px solid #1C1C2E', color: '#6B698A', textDecoration: 'none' }}>
+                      style={{ padding: '6px 12px', borderRadius: '7px', fontSize: '12px', border: '1px solid #1C1C2E', color: '#9492B0', textDecoration: 'none' }}>
                       {l.label}
                     </Link>
                   ))}

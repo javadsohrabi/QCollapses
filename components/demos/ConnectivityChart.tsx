@@ -72,7 +72,7 @@ function TopologyGraph({ topology, active }: { topology: typeof topologies[0]; a
       transition: 'all 0.2s',
       cursor: 'default',
     }}>
-      <p style={{ fontSize: '11px', fontWeight: 500, color: active ? topology.color : '#6B698A', marginBottom: '8px', letterSpacing: '0.04em' }}>
+      <p style={{ fontSize: '11px', fontWeight: 500, color: active ? topology.color : '#9492B0', marginBottom: '8px', letterSpacing: '0.04em' }}>
         {topology.label}
       </p>
       <svg width={W} height={H} viewBox={'0 0 ' + W + ' ' + H} style={{ display: 'block', margin: '0 auto' }}>
@@ -90,11 +90,11 @@ function TopologyGraph({ topology, active }: { topology: typeof topologies[0]; a
           <circle key={q.id}
             cx={scale(q.x, 100, W)} cy={scale(q.y, 100, H)} r="5"
             fill={active ? topology.color : '#3D3875'}
-            stroke={active ? '#E2E0FF' : '#6B698A'} strokeWidth="1"
+            stroke={active ? '#E2E0FF' : '#9492B0'} strokeWidth="1"
           />
         ))}
       </svg>
-      <p style={{ fontSize: '10px', color: '#6B698A', marginTop: '8px', lineHeight: 1.5 }}>
+      <p style={{ fontSize: '10px', color: '#9492B0', marginTop: '8px', lineHeight: 1.5 }}>
         {topology.desc}
       </p>
     </div>
@@ -107,7 +107,7 @@ export default function ConnectivityChart() {
   return (
     <div style={{ marginBottom: '8px' }}>
       <div style={{ backgroundColor: '#0F0F1A', borderRadius: '8px', padding: '16px', marginBottom: '8px' }}>
-        <p style={{ fontSize: '10px', color: '#6B698A', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+        <p style={{ fontSize: '10px', color: '#9492B0', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
           Hardware topology comparison — click each to explore
         </p>
 
@@ -118,7 +118,7 @@ export default function ConnectivityChart() {
                 padding: '5px 12px', borderRadius: '7px', fontSize: '11px', cursor: 'pointer',
                 border: '1px solid ' + (active === t.id ? t.color : '#1C1C2E'),
                 backgroundColor: active === t.id ? t.color + '15' : 'transparent',
-                color: active === t.id ? t.color : '#6B698A',
+                color: active === t.id ? t.color : '#9492B0',
                 fontFamily: "'Space Grotesk', system-ui, sans-serif",
                 transition: 'all 0.15s',
               }}>
@@ -134,14 +134,14 @@ export default function ConnectivityChart() {
         </div>
 
         <div style={{ marginTop: '12px', padding: '10px 12px', borderRadius: '6px', backgroundColor: '#0A0A14', border: '1px solid #1C1C2E' }}>
-          <p style={{ fontSize: '11px', color: '#6B698A', lineHeight: 1.6 }}>
+          <p style={{ fontSize: '11px', color: '#9492B0', lineHeight: 1.6 }}>
             <span style={{ color: '#9D96E8', fontWeight: 500 }}>Routing overhead: </span>
             A SWAP gate requires 3 CNOT gates and introduces 3x the noise of a single two-qubit gate. On IBM heavy-hex, typical circuits require 2-5x more gates after compilation than the abstract circuit shows.
           </p>
         </div>
       </div>
 
-      <p style={{ fontSize: '11px', color: '#6B698A', lineHeight: 1.6, opacity: 0.8 }}>
+      <p style={{ fontSize: '11px', color: '#9492B0', lineHeight: 1.6, opacity: 0.8 }}>
         Real quantum chips have fixed wiring. A circuit diagram showing a CNOT between any two qubits is an abstraction — the compiler must route the operation through the physical topology, often inserting many extra gates.
       </p>
     </div>

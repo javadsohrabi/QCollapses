@@ -53,7 +53,7 @@ export default function BarrenPlateauChart() {
       ctx.fillStyle = '#7C72DD'
       ctx.fill()
 
-      ctx.fillStyle = '#6B698A'
+      ctx.fillStyle = '#9492B0'
       ctx.font = '9px monospace'
       ctx.textAlign = 'center'
       ctx.fillText('n=' + q, x, H - pad.b + 16)
@@ -71,7 +71,7 @@ export default function BarrenPlateauChart() {
     ctx.save()
     ctx.translate(12, pad.t + cH / 2)
     ctx.rotate(-Math.PI / 2)
-    ctx.fillStyle = '#6B698A'
+    ctx.fillStyle = '#9492B0'
     ctx.font = '10px monospace'
     ctx.textAlign = 'center'
     ctx.fillText('Gradient variance', 0, 0)
@@ -80,11 +80,11 @@ export default function BarrenPlateauChart() {
 
   return (
     <div style={{ marginBottom: '8px' }}>
-      <p style={{ fontSize: '11px', color: '#6B698A', marginBottom: '8px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+      <p style={{ fontSize: '11px', color: '#9492B0', marginBottom: '8px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
         Gradient variance vs qubit count (global cost function)
       </p>
       <canvas ref={canvasRef} style={{ width: '100%', height: '200px', borderRadius: '8px', display: 'block' }} />
-      <p style={{ fontSize: '11px', color: '#6B698A', marginTop: '8px', lineHeight: 1.6, opacity: 0.7 }}>
+      <p style={{ fontSize: '11px', color: '#9492B0', marginTop: '8px', lineHeight: 1.6, opacity: 0.7 }}>
         Gradient variance scales as O(2^-n). At 16 qubits the gradient is 65,000x smaller than at 2 qubits — effectively zero. No classical optimization trick fixes this.
       </p>
     </div>
