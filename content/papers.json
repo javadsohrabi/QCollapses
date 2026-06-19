@@ -657,8 +657,31 @@
       "post-quantum",
       "resource estimation"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-15",
     "featuredNote": "From Google Quantum AI, Stanford, and the Ethereum Foundation: concrete resource estimates for breaking elliptic-curve cryptocurrency cryptography \u2014 under 1,450 logical qubits, executable in minutes on future superconducting hardware. A sharp, current update to the 'quantum will break crypto' question, with an urgent call to migrate to post-quantum cryptography."
+  },
+  {
+    "id": "tham-qldpc-2026",
+    "title": "Breakeven demonstration of quantum low-density parity-check codes",
+    "authors": "Tham, E., Goldman, M. L., Debnath, S., Patel, A. N., Saraladevi, J., Nguyen, J., Nielsen, E., Pisenti, N., Wright, K., Gamble, J., Delfosse, N.",
+    "journal": "arXiv",
+    "date": "2026-06-04",
+    "topic": "Hardware",
+    "level": "Advanced",
+    "idea": "Demonstrates nine quantum error-correcting codes with very different connectivity requirements on a single trapped-ion device without hardware reconfiguration, spanning qLDPC, topological, and concatenated codes. A qLDPC code encoding 4 logical qubits into 18 physical qubits achieves a logical error rate up to 9x better than a prior superconducting demonstration \u2014 and reaches breakeven, where some logical qubit lifetimes meet or exceed the physical qubits.",
+    "takeaway": "The experimental counterpart to qLDPC theory. These codes promise far better logical-to-physical qubit density than surface codes \u2014 directly attacking the overhead problem \u2014 but require non-local stabilizer measurements. Breakeven here is real but shown for specific code and channel combinations, not universally. A meaningful step, achieved on a stationary ion chain without physical shuttling.",
+    "link": "https://arxiv.org/abs/2606.06455",
+    "tags": [
+      "qLDPC",
+      "error correction",
+      "trapped ion",
+      "breakeven",
+      "logical qubit",
+      "fault tolerance"
+    ],
+    "featured": true,
+    "featuredDate": "2026-06-19",
+    "featuredNote": "An experimental milestone for quantum LDPC codes \u2014 the leading challenger to surface codes for fault tolerance. On a trapped-ion device, 4 logical qubits in 18 physical qubits reach breakeven, with logical error rates up to 9x better than a prior superconducting demonstration."
   }
 ]
