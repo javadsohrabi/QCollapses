@@ -680,8 +680,31 @@
       "logical qubit",
       "fault tolerance"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-19",
     "featuredNote": "An experimental milestone for quantum LDPC codes \u2014 the leading challenger to surface codes for fault tolerance. On a trapped-ion device, 4 logical qubits in 18 physical qubits reach breakeven, with logical error rates up to 9x better than a prior superconducting demonstration."
+  },
+  {
+    "id": "fentaw-rl-control-2026",
+    "title": "Adaptive Reinforcement Learning for Robust Open Quantum System Control: A Multi-Task Framework with Temporal Optimization",
+    "authors": "Fentaw, H. W., Campbell, S., Caton, S.",
+    "journal": "arXiv",
+    "date": "2026-05-26",
+    "topic": "Quantum ML",
+    "level": "Advanced",
+    "idea": "A multi-task Soft Actor-Critic reinforcement learning framework for open-system quantum control that learns optimal pulse sequences while simultaneously discovering the problem-specific evolution time T and number of control pulse segments N. Across 51 Hamiltonian variations under environmental noise, it drives systems from initial to target states with high fidelity, and tests whether a single model generalizes to Hamiltonians not seen during training.",
+    "takeaway": "A well-scoped application of RL to a genuinely hard practical problem: steering noisy quantum systems with robust control pulses. The honest, useful result is that the learned policies are more robust to amplitude perturbations and decoherence variation than GRAPE-optimized controls \u2014 robustness, not just peak fidelity, is what matters on real hardware. Still simulation-based, and true universal control remains an open question.",
+    "link": "https://arxiv.org/abs/2605.26925",
+    "tags": [
+      "reinforcement learning",
+      "quantum control",
+      "open systems",
+      "pulse optimization",
+      "GRAPE",
+      "robustness"
+    ],
+    "featured": true,
+    "featuredDate": "2026-06-22",
+    "featuredNote": "A careful, well-scoped use of reinforcement learning for quantum control \u2014 learning robust pulse sequences across 51 noisy Hamiltonians and discovering the evolution time and pulse count automatically. Notably more robust to noise than the standard GRAPE method, though still simulation-based."
   }
 ]
