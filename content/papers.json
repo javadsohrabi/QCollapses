@@ -703,8 +703,31 @@
       "GRAPE",
       "robustness"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-22",
     "featuredNote": "A careful, well-scoped use of reinforcement learning for quantum control \u2014 learning robust pulse sequences across 51 noisy Hamiltonians and discovering the evolution time and pulse count automatically. Notably more robust to noise than the standard GRAPE method, though still simulation-based."
+  },
+  {
+    "id": "farrell-thermal-2026",
+    "title": "Preparing thermal states of frustrated quantum spin systems using 139 qubits",
+    "authors": "Farrell, R. C., Zhan, Y., Katschke, L., Pollet, L., Rosen, I. T., Halimeh, J. C.",
+    "journal": "arXiv",
+    "date": "2026-05-25",
+    "topic": "Algorithms",
+    "level": "Advanced",
+    "idea": "Uses dissipative state preparation on IBM quantum processors to prepare approximate thermal states of frustrated spin models on the kagome lattice \u2014 including the antiferromagnetic Heisenberg model, whose finite-temperature properties are inaccessible to quantum Monte Carlo due to a severe sign problem. They reach 79 spins coupled to 60 environment qubits (139 total), with a robust steady state of adjustable effective temperature persisting through over 1,000 layers of two-qubit gates.",
+    "takeaway": "One of the cleaner cases for genuine quantum simulation advantage: the sign problem is a real, well-understood wall that blocks classical Monte Carlo for frustrated magnets. The honest part is the scaling evidence \u2014 classical simulations up to 24 sites show the circuit depth to reach equilibrium is roughly size-independent and grows at most linearly with inverse temperature. Engineered dissipation, not just unitary evolution, is the key tool.",
+    "link": "https://arxiv.org/abs/2605.26245",
+    "tags": [
+      "quantum simulation",
+      "thermal states",
+      "sign problem",
+      "kagome",
+      "dissipation",
+      "frustrated magnetism"
+    ],
+    "featured": true,
+    "featuredDate": "2026-06-29",
+    "featuredNote": "Thermal states of frustrated spin systems prepared on 139 IBM qubits \u2014 targeting the kagome Heisenberg model, which classical quantum Monte Carlo cannot reach because of the sign problem. A careful demonstration with honest scaling evidence, pointing toward where quantum simulation may genuinely beat classical methods."
   }
 ]
