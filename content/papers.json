@@ -726,8 +726,31 @@
       "dissipation",
       "frustrated magnetism"
     ],
-    "featured": true,
+    "featured": false,
     "featuredDate": "2026-06-29",
     "featuredNote": "Thermal states of frustrated spin systems prepared on 139 IBM qubits \u2014 targeting the kagome Heisenberg model, which classical quantum Monte Carlo cannot reach because of the sign problem. A careful demonstration with honest scaling evidence, pointing toward where quantum simulation may genuinely beat classical methods."
+  },
+  {
+    "id": "slabbert-qae-2026",
+    "title": "Quantum Convolutional Autoencoders for Reconstruction-Based Anomaly Detection",
+    "authors": "Slabbert, D., Petruccione, F.",
+    "journal": "arXiv",
+    "date": "2026-07-02",
+    "topic": "Quantum ML",
+    "level": "Intermediate",
+    "idea": "Adapts a quantum convolutional neural network into a quantum autoencoder for reconstruction-based anomaly detection, trained semi-supervised on normal samples with reconstruction error as the anomaly score. It compares two designs \u2014 a hierarchical architecture that keeps information distributed across the circuit, and a bottleneck architecture that explicitly compresses information into a smaller latent space \u2014 benchmarked against a variational quantum circuit and a classical baseline on real exoplanet data.",
+    "takeaway": "The interesting finding is architectural: explicitly compressing the quantum latent space through a bottleneck can outperform designs that spread information across the circuit, apparently by forcing more generalisable features. Worth reading carefully \u2014 the headline improvement is a quantum-to-quantum comparison, so the question a careful reader should ask is how the quantum autoencoder actually compares to the classical baseline.",
+    "link": "https://arxiv.org/abs/2607.02135",
+    "tags": [
+      "QML",
+      "autoencoder",
+      "anomaly detection",
+      "QCNN",
+      "latent space",
+      "exoplanets"
+    ],
+    "featured": true,
+    "featuredDate": "2026-07-07",
+    "featuredNote": "A quantum convolutional autoencoder for anomaly detection, tested on real exoplanet data. The finding is architectural \u2014 an explicit quantum bottleneck compresses the latent space and improves detection over spreading information across the circuit, by learning more generalisable features."
   }
 ]
